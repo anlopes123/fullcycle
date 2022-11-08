@@ -10,7 +10,7 @@ services:
       - node-network
     volumes:
       - ./node:/usr/src/app
-    tty: true
+    tty: trues
     ports:
       - "3000:3000"
     depends_on:
