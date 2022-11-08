@@ -1,9 +1,14 @@
 # fullcycle
 Este repositório é para meus estudos de todo conteúdo referente ao curso FullCycle
 
-O Desafio em go encontra-se na pasta desafioGo
+1 - O Desafio em go encontra-se na pasta desafioGo
 
-para rodar essa imagem docker run anizairl/golang:latest
+    para rodar essa imagem docker run anizairl/golang:latest
+
+2 - O Desafio ngninx como proxy reverso para nodejs encontra-se na pasta desafioNginxNode
+    
+    para rodar essa imagem estando na pasta digite docker-compose up -d --build
+    
 
 
 
