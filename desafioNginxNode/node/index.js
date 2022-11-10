@@ -16,7 +16,6 @@ const insert = `INSERT INTO people(name) values ('anizair')`
 connection.query(insert)
 connection.end()
 
-const qry = `Select * from people`
 
 app.get('/', (req, resp) =>{
 

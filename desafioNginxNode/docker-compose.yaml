@@ -2,18 +2,19 @@ version: '3'
 
 services:
   node:
-    build: 
-      context: node
+    build:
+      context: ./node
     container_name: node
+    image: anizairl/nodedes:prod
     entrypoint: docker-entrypoint.sh
     command: node index.js
+    expose:
+      - 3000
     networks:
       - node-network
     volumes:
       - ./node:/usr/src/app
     tty: true
-    expose:
-      - 3000
     depends_on:
       - db
 
