@@ -20,7 +20,9 @@ services:
       - db
 
   db:
-    image: mysql:5.7
+    build: 
+      context: ./db
+      dockerfile: Dockerfile
     command: --innodb-use-native-aio=0
     container_name: db
     restart: always
